@@ -3,14 +3,6 @@ import { UseCase } from './types';
 
 export const USE_CASES: UseCase[] = [
   {
-    id: "1",
-    faculty: "Jennifer",
-    categories: ["Course Content Development", "Examples and Illustrations"],
-    title: "Finding Example Systems and Histories",
-    description: "Finding example systems and their histories that go along with different models of human behavior. It's been helpful to identify systems that explicitly addressed certain issues and one or two pointers to references. Then, I expand from there.",
-    tools: ["ChatGPT", "Perplexity"]
-  },
-  {
     id: "2",
     faculty: "Marcus",
     categories: ["Assessment & Feedback"],
