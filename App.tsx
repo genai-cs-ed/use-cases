@@ -218,14 +218,6 @@ const App: React.FC = () => {
                </div>
             </div>
           </div>
-          <div className="mt-16 pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-400">
-            <p>&copy; {new Date().getFullYear()} GenAI Faculty Use Cases Repository</p>
-            <div className="flex gap-6">
-              <a href="#" className="hover:text-indigo-600 transition-colors">Documentation</a>
-              <a href="#" className="hover:text-indigo-600 transition-colors">Privacy</a>
-              <a href="#" className="hover:text-indigo-600 transition-colors">Contact</a>
-            </div>
-          </div>
         </div>
       </footer>
     </div>
