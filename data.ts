@@ -7,6 +7,13 @@ export const USE_CASES: UseCase[] = [
     tools: []
   },
   {
+    id: "2",
+    categories: ["Course Content Development", "Examples and Illustrations"],
+    title: "Generating Multiple Lecture Examples",
+    description: "Asking AI for four or five strong examples of a concept (e.g., when database normalization made a big difference) to avoid reusing the same fallbacks, then selecting the most compelling ones for lecture material.",
+    tools: []
+  },
+  {
     id: "3",
     categories: ["Course Content Development", "Examples and Illustrations"],
     title: "Generating Code Examples and Exercises",
@@ -18,6 +25,13 @@ export const USE_CASES: UseCase[] = [
     categories: ["Course Content Development", "Examples and Illustrations"],
     title: "Demonstrating AI Limitations Live in Class",
     description: "Using AI to write intentionally buggy code that looks mostly correct, then debugging and fixing it live in class. This illustrates how AI can be incorrect even when it gets most of the way there, while also teaching framework concepts.",
+    tools: []
+  },
+  {
+    id: "5",
+    categories: ["Course Content Development", "Creating Assessments and Assignments"],
+    title: "AI-Generated Study Guides",
+    description: "Asking AI to generate a study guide over a set of topics, then augmenting the output with lecture notes to fill gaps and tailor the material to the course's specific presentation rather than a generic overview.",
     tools: []
   },
   {
@@ -53,6 +67,13 @@ export const USE_CASES: UseCase[] = [
     categories: ["Processing Assessments and Providing Feedback"],
     title: "Summarizing Student Reflection Surveys",
     description: "Using AI to summarize and extract themes from student reflection surveys, reducing manual effort while surfacing key insights from student responses.",
+    tools: []
+  },
+  {
+    id: "11",
+    categories: ["Processing Assessments and Providing Feedback"],
+    title: "Generating Test Data for Database Exercises",
+    description: "Asking AI to generate realistic tables of data, DAG examples, and other structured datasets for use in assessments. Works well for straightforward arithmetic relationships, though output may lack interesting variation.",
     tools: []
   },
   {
