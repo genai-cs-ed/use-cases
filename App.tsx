@@ -8,6 +8,8 @@ import { ExternalResources } from './components/ExternalResources';
 
 type ViewMode = 'explorer' | 'grid';
 
+const SUBMIT_USE_CASE_URL = "https://forms.gle/zdhiFvmh68676LrG8";
+
 const App: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
@@ -59,6 +61,16 @@ const App: React.FC = () => {
             <p className="text-lg text-slate-600 leading-relaxed mb-8">
               Explore how computer science educators are leveraging generative artificial intelligence to enhance curriculum design, personalize learning, and streamline administrative workflows.
             </p>
+            
+            <a 
+              href={SUBMIT_USE_CASE_URL} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-xl font-semibold transition-all shadow-lg shadow-indigo-200 hover:shadow-indigo-300 transform hover:-translate-y-0.5"
+            >
+              <i className="fa-solid fa-plus-circle"></i>
+              Submit a Use Case
+            </a>
           </div>
 
           {/* Search and Filters Bar - Only visible in Search Grid mode */}
@@ -192,6 +204,30 @@ const App: React.FC = () => {
 
       {/* External Resources Section */}
       <ExternalResources />
+
+      {/* Submission CTA Section */}
+      <section className="bg-slate-50 py-20 border-t border-slate-200">
+        <div className="container mx-auto px-6 text-center">
+          <div className="max-w-2xl mx-auto">
+            <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-6 text-indigo-600">
+              <i className="fa-solid fa-lightbulb text-2xl"></i>
+            </div>
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Have an innovative use case?</h2>
+            <p className="text-slate-600 mb-8 text-lg">
+              Share how you are using Generative AI in your CS classroom. Your contribution helps build a diverse library of resources for educators worldwide.
+            </p>
+            <a 
+              href={SUBMIT_USE_CASE_URL}
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-white text-indigo-600 border-2 border-indigo-100 hover:border-indigo-600 px-8 py-3 rounded-xl font-bold transition-all hover:bg-indigo-50"
+            >
+              Submit Your Case Study
+              <i className="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
 
       {/* Stats / Footer Area */}
       <footer className="mt-20 border-t border-slate-200 py-16 bg-white relative">
